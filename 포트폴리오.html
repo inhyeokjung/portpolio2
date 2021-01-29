@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="js/scroll.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+     <ul>
+       <li><img src="images/sns.png" alt="sns"><br>
+          <span>wol01137@naver.com</span>
+       </li>
+       <li><img src="images/call.png" alt="call"><br>
+          <span>010-8283-9427</span>
+       </li>
+       <li><img src="images/me.png" alt="me"><br>
+          <span>Jung In Hyoek</span>
+       </li>
+     </ul>
+    </div>
+    <div id="contents">
+     <div class="floating-menu">
+      <ul>
+           <li class="m">
+               <a href="#section-01" class="menu-01">
+                   <span>ABOUT ME</span>
+               </a>
+           </li>
+           <li class="m">
+               <a href="#section-02" class="menu-02">
+                   <span>Portpolio<br>Icon</span>
+               </a>
+           </li>
+           <li class="m">
+               <a href="#section-03" class="menu-03">
+                   <span>Portpolio<br>Banner</span>
+               </a>
+           </li>
+           <li class="m">
+               <a href="#section-04" class="menu-04">
+                   <span>Portpolio<br>Site</span>
+               </a>
+           </li>
+           <li class="m">
+               <a href="#section-05" class="menu-05">
+                   <span>Contact</span>
+               </a>
+           </li>
+           <li class="btn-top">
+               <a href="#header" class="menu-05">
+                   <span>상단으로</span>
+               </a>
+           </li>
+     </ul>
+    </div>
+       <div class="section-01 scroll">
+       <div class="section-01-1">
+       <h2>ABOUT ME</h2>
+       <p>
+           <span>Name : 정 인 혁</span><br><br>
+           <span>Age : 25</span><br><br>
+           <span>서울시 강서구 화곡1동</span><br>
+           </p>
+           <p>
+           <span>Skills<br><br>
+            <img src="images/skill1.png" alt="">
+            <img src="images/skill2.png" alt="">
+            <img src="images/skill3.png" alt="">
+            <img src="images/skill4.png" alt="">
+            <img src="images/skill5.png" alt="">
+           </span>
+           
+       </p>
+       </div>
+       </div>
+       <div class="section-02 scroll">
+       <div class="section-02-1">
+       <h2>Portpolio</h2>
+       <span>Design</span>
+       <h3><img src="images/text.gif" alt=""></h3>
+       <div class="row">
+  <div class="column">
+    <img src="images/icon1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/icon1-1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/icon2-1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/icon3-1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/icon4-1.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column2">
+      <img class="demo" src="images/icon1.png" style="width:100%" onclick="currentSlide(1)" alt="simple design">
+    </div>
+
+    <div class="column2">
+      <img class="demo" src="images/icon4.png" style="width:100%" onclick="currentSlide(2)" alt="simple design2">
+    </div>
+
+    <div class="column2">
+      <img class="demo" src="images/icon2.png" style="width:100%" onclick="currentSlide(3)" alt="color design">
+    </div>
+
+    <div class="column2">
+      <img class="demo" src="images/icon3.png" style="width:100%" onclick="currentSlide(4)" alt="color design2">
+    </div>
+  </div>
+</div>
+           </div>
+       </div>
+       <div class="section-03 scroll">
+       <h2>Portpolio</h2>
+       <span>banner</span>
+       <ul>
+            <li><img src="images/banner1.png" alt=""></li>
+       </ul>
+       </div>
+       <div class="section-04 scroll">
+       <h2>Portpolio-Site</h2>
+       <span>Team Project Site</span>
+       <ul>
+         <li><a href="http://wol01137.dothome.co.kr/team/index.html"><img src="images/site1.png" alt="db손해보험"></a></li>
+         <li><a href="http://wol01137.dothome.co.kr/team2/index.html"><img src="images/site2.png" alt="정보문화사"></a></li>
+       </ul>
+
+       <span>Individual Site</span>
+       </div>
+       <div class="section-05 scroll">
+       <h2>Contact</h2>
+       </div>
+       </div>
+       <div class="footer">  </div>
+       <div id="mask"></div> 
+
+
+
+<script>
+    (function (global, $) {
+
+    var $menu     = $('.floating-menu li.m'),
+        $contents = $('.scroll'),
+        $doc      = $('html, body');
+    $(function () {
+
+        $menu.on('click','a', function(e){
+            var $target = $(this).parent(),
+                idx     = $target.index(),
+                section = $contents.eq(idx),
+                offsetTop = section.offset().top;
+            $doc.stop()
+                    .animate({
+                        scrollTop :offsetTop
+                    }, 800);
+            return false;
+        });
+    });
+
+    $(window).scroll(function(){
+
+        var scltop = $(window).scrollTop();
+
+        $.each($contents, function(idx, item){
+            var $target   = $contents.eq(idx),
+                i         = $target.index(),
+                targetTop = $target.offset().top;
+
+            if (targetTop <= scltop) {
+                $menu.removeClass('on');
+                $menu.eq(idx).addClass('on');
+            }
+            if (!(200 <= scltop)) {
+                $menu.removeClass('on');
+            }
+        })
+
+    });
+
+    var btnTop = $('.btn-top');
+    btnTop.on('click','a', function(e){
+        e.preventDefault();
+        $doc.stop()
+                .animate({
+                    scrollTop : 0
+                },800)
+    });
+
+}(window, window.jQuery));
+    </script>    
+    
+    <script>
+            // Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+    
+</body>
+</html>
